@@ -12,4 +12,9 @@ def list_tasks():
 
 if __name__ == "__main__":
     add_task("Learn Git")
-    list_tasks()
+    list_tasks() 
+
+def mark_done(index):
+    tasks[index - 1] = tasks[index - 1] + "[done]"
+    print(f"Marked done: {tasks[index - 1]}")
+
