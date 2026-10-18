@@ -1,0 +1,15 @@
+tasks = []
+
+def add_task(name):
+    tasks.append(name)
+    print(f"Addd: {name}")
+
+def list_tasks():
+    for i, t in enumerate(tasks, 1):
+        print(f"{i}. {t}")
+
+# ---- new commands go below this line ----
+
+if __name__ == "__main__":
+    add_task("Learn Git")
+    list_tasks()
