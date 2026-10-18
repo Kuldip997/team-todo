@@ -18,3 +18,8 @@ def mark_done(index):
     tasks[index - 1] = tasks[index - 1] + "[done]"
     print(f"Marked done: {tasks[index - 1]}")
 
+    list_tasks()
+
+def delete_task(index):
+    removed = tasks.pop(index - 1)
+    print(f"Deleted: {removed}")
